@@ -1,1 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #313338;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* BACKGROUND GLOW */
+.bg {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background:
+    radial-gradient(circle at top left, #5865f2, transparent 40%),
+    radial-gradient(circle at bottom right, #404eed, transparent 40%);
+  filter: blur(120px);
+  opacity: 0.6;
+}
+
+/* CARD */
+.login-card {
+  position: relative;
+  background: #2b2d31;
+  width: 360px;
+  padding: 32px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+/* TEXT */
+.login-card h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-card p {
+  color: #b5bac1;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+label {
+  font-size: 12px;
+  color: #b5bac1;
+  margin-top: 15px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background: #1e1f22;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #5865f2;
+}
+
+/* LINKS */
+.forgot {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #00a8fc;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #5865f2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4752c4;
+}
+
+/* FOOTER */
+.register {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #b5bac1;
+  text-align: center;
+}
+
+.register a {
+  color: #00a8fc;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
 
