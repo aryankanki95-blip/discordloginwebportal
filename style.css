@@ -13,16 +13,19 @@ body {
   overflow: hidden;
 }
 
-/* BACKGROUND GLOW */
-.bg {
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background:
-    radial-gradient(circle at top left, #5865f2, transparent 40%),
-    radial-gradient(circle at bottom right, #404eed, transparent 40%);
-  filter: blur(120px);
-  opacity: 0.6;
+/BACKGROUND GLOW */
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("bg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+
 }
 
 /* CARD */
